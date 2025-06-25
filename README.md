@@ -55,7 +55,6 @@ git config --global credential.helper store/cache
 ```ruby
 git config init.defaultBranch
 ```
----
 - #### Modificar o nome da Branch padrão
 ```ruby
 git config --global init.defaultBranch nomeNovo
