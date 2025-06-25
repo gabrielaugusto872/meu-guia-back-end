@@ -191,6 +191,19 @@ git restore --staged nome-do-arquivo
 ```ruby
 git status
 ```
+---
+
+### Github
+- #### Conectar repositório local ao remoto
+```ruby
+git remote add origin linkDoRepositórioRemoto
+```
+---
+- #### Envia as alterações do repositório local paro o remoto
+```ruby
+git push -u origin main
+```
+---
 
 
 ## 📚 Documentação
