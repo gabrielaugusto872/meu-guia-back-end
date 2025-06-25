@@ -67,6 +67,10 @@ git config --global --list
 ```ruby
 mkdir nome-da-pasta
 ```
+- #### Excluir pasta
+```ruby
+rmdir nome-da-pasta
+```
 - #### Entrar na pasta
 ```ruby
 cd nome-da-pasta/
@@ -74,6 +78,10 @@ cd nome-da-pasta/
 - #### Trasnformar pasta em diretório git
 ```ruby
 git init
+```
+- #### Remove recursivamente o diretório git
+```ruby
+rm -rf .git
 ```
 - #### Entrar no arquivo
 ```ruby
