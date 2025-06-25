@@ -10,17 +10,52 @@ Repositório para armazenar Comandos utéis para o Git e Github.
 ## 💻 Lista de Comandos
 
 - [Comandos Gerais](#comandos-gerais)
+- [Criação e Navegação entre pastas e arquivos](#criação-e-navegação-entre-pastas-e-arquivos)
 - [Cadastro](#cadastro )
 - [Configuração da Branch](#configuração-da-branch)
 - [Criação e Clonagem de Repositórios](#criação-e-clonagem-de-repositórios)
+- [Commits](#commits)
 - [Github](#github)
 
 ---
 
 ### Comandos Gerais
+- #### Mostrar o status da árvore de trabalho
+```ruby
+git status
+```
+---
 - #### Listar
+
 ```
 ls
+```
+---
+
+### Criação e Navegação entre pastas e arquivos
+- #### Criar pasta
+```ruby
+mkdir nome-da-pasta
+```
+---
+- #### Excluir pasta
+```ruby
+rmdir nome-da-pasta
+```
+---
+- #### Entrar na pasta
+```ruby
+cd nome-da-pasta/
+```
+---
+- #### Entrar no arquivo
+```ruby
+cd nome-do-arquivo
+```
+---
+- #### Sair do arquivo ou pasta
+```ruby
+cd ..
 ```
 ---
 
@@ -73,21 +108,6 @@ git config --global --list
 ```
 ---
 ### Criação e Clonagem de Repositórios
-- #### Criar pasta
-```ruby
-mkdir nome-da-pasta
-```
----
-- #### Excluir pasta
-```ruby
-rmdir nome-da-pasta
-```
----
-- #### Entrar na pasta
-```ruby
-cd nome-da-pasta/
-```
----
 - #### Trasnformar pasta em diretório git
 ```ruby
 git init
@@ -96,16 +116,6 @@ git init
 - #### Remove recursivamente o diretório git
 ```ruby
 rm -rf .git
-```
----
-- #### Entrar no arquivo
-```ruby
-cd nome-do-arquivo
-```
----
-- #### Sair do arquivo ou pasta
-```ruby
-cd ..
 ```
 ---
 - #### Clonar o repositório
@@ -118,21 +128,18 @@ git clone URL
 git clone URL novoNome
 ```
 ---
-- #### Mostrar os repositórios remotos vinculados
-```ruby
-git remote -v
-```
----
-- #### Conectar um rpositório local a um remoto
-```ruby
-git remote add nome URL
-```
----
 - #### Clona apenas a branch escolhida
 ```ruby
 git clone URL --branch nome-da-branch --single-branch
 ```
 ---
+- #### Mostrar os repositórios remotos vinculados
+```ruby
+git remote -v
+```
+---
+
+### Commits
 - #### Adiciona novos arquivos a serem salvos
 ```ruby
 git add nome-do-arquivo
@@ -188,16 +195,11 @@ git restore --staged nome-do-arquivo
 
 ```
 ---
-- #### Mostrar o status da árvore de trabalho
-```ruby
-git status
-```
----
 
 ### Github
-- #### Conectar repositório local ao remoto
+- #### Conectar um repositório local a um remoto
 ```ruby
-git remote add origin linkDoRepositórioRemoto
+git remote add nome URL
 ```
 ---
 - #### Envia as alterações do repositório local paro o remoto
