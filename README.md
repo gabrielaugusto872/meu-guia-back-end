@@ -3,11 +3,11 @@
 Repositório para armazenar Comandos utéis para o Git e Github.
 
 ## 🧾 Menu
-- [Lista de Comandos](##lista-de-comandos)
+- [Lista de Comandos](#lista-de-comandos)
 - [Documentação](#📚-documentação)
 - [Referências](#🔍-referências)
 
-## 💻 Lista de Comandos
+## Lista de Comandos
 
 - [Comandos Gerais](#comandos-gerais)
 - [Criação e Navegação entre pastas e arquivos](#criação-e-navegação-entre-pastas-e-arquivos)
@@ -214,8 +214,8 @@ git pull
 ---
 
 
-## 📚 Documentação
+## Documentação
 - [Documentação Git](https://git-scm.com/doc)
 - [Documentação Github](https://docs.github.com/pt)
 
-## 🔍 Referências
+## Referências
