@@ -103,6 +103,16 @@ git remote add nome URL
 ```ruby
 git clone URL --branch nome-da-branch --single-branch
 ```
+- #### Salvar alterações (Commit)
+```ruby
+git commit -m"Sua Mensagem"
+```
+---
+- #### Exibi commits feitos
+```ruby
+git log
+```
+---
 - #### Mostrar o status da árvore de trabalho
 ```ruby
 git status
