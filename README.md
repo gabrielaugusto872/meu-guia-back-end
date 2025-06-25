@@ -1,4 +1,4 @@
-# DIO | Resumos Git e Github
+# Comandos Git e Github
 
 Repositório para armazenar Comandos utéis para o Git e Github.
 
