@@ -108,7 +108,7 @@ git clone URL --branch nome-da-branch --single-branch
 git commit -m"Sua Mensagem"
 ```
 ---
-- #### Exibi commits feitos
+- #### Exibe histórico de commits
 ```ruby
 git log
 ```
