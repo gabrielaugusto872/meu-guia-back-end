@@ -4,8 +4,8 @@ Repositório para armazenar Comandos utéis para o Git e Github.
 
 ## 🧾 Menu
 - [Lista de Comandos](#lista-de-comandos)
-- [Documentação](#📚-documentação)
-- [Referências](#🔍-referências)
+- [Documentação](#documentação)
+- [Referências](#referências)
 
 ## Lista de Comandos
 
