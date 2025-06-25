@@ -204,6 +204,11 @@ git remote add origin linkDoRepositórioRemoto
 git push -u origin main
 ```
 ---
+- #### Baixa as alterações do repositório remoto paro o local
+```ruby
+git pull
+```
+---
 
 
 ## 📚 Documentação
