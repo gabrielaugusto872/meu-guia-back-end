@@ -111,6 +111,14 @@ git remote add nome URL
 ```ruby
 git clone URL --branch nome-da-branch --single-branch
 ```
+- #### Adiciona novos arquivos a serem salvos
+```ruby
+git add nome-do-arquivo
+```
+- #### Restaura o arquivo da forma que está no diretório
+```ruby
+git restore nome-do-arquivo
+```
 - #### Salvar alterações (Commit)
 ```ruby
 git commit -m"Sua Mensagem"
@@ -119,6 +127,10 @@ git commit -m"Sua Mensagem"
 - #### Exibe histórico de commits
 ```ruby
 git log
+```
+- #### Alterar mensagem do último commit (Commit)
+```ruby
+git commit --amend -m"Sua Mensagem"
 ```
 ---
 - #### Mostrar o status da árvore de trabalho
@@ -132,3 +144,4 @@ git status
 - [Documentação Github](https://docs.github.com/pt)
 
 ## 🔍 Referências
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooi
