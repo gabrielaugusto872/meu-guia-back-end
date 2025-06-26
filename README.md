@@ -1,18 +1,19 @@
-# Comandos Git e Github
+# Guia Definitivo do Desenvolvimento Back-end
 
 Repositório para armazenar Comandos utéis para o Git e Github.
 
 ## 🧾 Menu
-- [Lista de Comandos](#💻-lista-de-comandos)
-- [Documentação](#📚-documentação)
-- [Referências](#🔍-referências)
+- [Lista de Comandos](#lista-de-comandos)
+- [Documentação](#documentação)
+- [Referências](#referências)
+-[Links Úteis](#links-úteis)
 
-## 💻 Lista de Comandos
+## Lista de Comandos
 
 - [Comandos Gerais](#comandos-gerais)
-- [Criação e Navegação entre pastas e arquivos](#criação-e-navegação-entre-pastas-e-arquivos)
+- [Criação e Navegação Entre Pastas e Arquivos](#criação-e-navegação-entre-pastas-e-arquivos)
 - [Cadastro](#cadastro )
-- [Configuração da Branch](#configuração-da-branch)
+- [Configuração e Manipulação de Branchs](#configuração-e-manipulação-de-branchs)
 - [Criação e Clonagem de Repositórios](#criação-e-clonagem-de-repositórios)
 - [Commits](#commits)
 - [Github](#github)
@@ -32,7 +33,7 @@ ls
 ```
 ---
 
-### Criação e Navegação entre pastas e arquivos
+### Criação e Navegação Entre Pastas e Arquivos
 - #### Criar pasta
 ```ruby
 mkdir nome-da-pasta
@@ -48,6 +49,11 @@ rmdir nome-da-pasta
 cd nome-da-pasta/
 ```
 ---
+- #### Criar arquivo
+```ruby
+touch nome-do-arquivo 
+```
+---
 - #### Entrar no arquivo
 ```ruby
 cd nome-do-arquivo
@@ -56,6 +62,16 @@ cd nome-do-arquivo
 - #### Sair do arquivo ou pasta
 ```ruby
 cd ..
+```
+---
+- #### Cria um arquivo com contéudo ou sobreescreve um ja criado
+```ruby
+echo "Primeira linha do arquivo" > nome-arquivo.txt
+```
+---
+- #### Adiciona contéudo no final de um arquivo já criado
+```ruby
+echo "Nova linha" >> nome-arquivo.txt
 ```
 ---
 
@@ -85,8 +101,13 @@ git config --global user.email
 git config --global credential.helper store/cache
 ```
 ---
+- #### Lista as configurações globais
+```ruby
+git config --global --list
+```
+---
  
-### Configuração da Branch
+### Configuração e Manipulação de Branchs
 - #### Visualizar o nome da Branch padrão
 ```ruby
 git config init.defaultBranch
@@ -102,11 +123,47 @@ git config --global init.defaultBranch nomeNovo
 git branch -m nome
 ```
 ---
-- #### Lista as configurações globais
+- #### Criar e mudar para uma nova branch
 ```ruby
-git config --global --list
+git switch -c nome-da-branch
 ```
 ---
+- #### Apenas mudar para uma nova branch
+```ruby
+git switch nome-da-branch
+```
+---
+- #### Lista o último commit de cada branch
+```ruby
+git branch -v
+```
+---
+- ### Lista as branchs do repositório
+```ruby
+git branch
+```
+---
+- #### Mescla um branch a branch atual
+```ruby
+git merge nome-da-branch-a-ser-mesclada
+```
+---
+- #### Deleta a branch escolhida
+```ruby
+git branch -d nome-da-branch
+```
+---
+- #### Clona apenas a branch escolhida
+```ruby
+git clone URL --branch nome-da-branch --single-branch
+```
+---
+- #### Mostra as diferenças entre as branchs
+```ruby
+git diff nome-da-branch-1 nome-da-branch-2
+```
+---
+
 ### Criação e Clonagem de Repositórios
 - #### Trasnformar pasta em diretório git
 ```ruby
@@ -126,11 +183,6 @@ git clone URL
 - #### Clonar o repositório com um novo nome
 ```ruby
 git clone URL novoNome
-```
----
-- #### Clona apenas a branch escolhida
-```ruby
-git clone URL --branch nome-da-branch --single-branch
 ```
 ---
 - #### Mostrar os repositórios remotos vinculados
@@ -195,11 +247,31 @@ git restore --staged nome-do-arquivo
 
 ```
 ---
+- #### Arquiva as modificações
+```ruby
+git stash
+```
+---
+- #### Lista as modificações arquivadas
+```ruby
+git stash list
+```
+---
+- #### Recupera a modificação arquivada mais recente e remove ela da lista
+```ruby
+git stash pop 
+```
+---
+- #### Recupera a modificação arquivada mais recente e mantém ela na lista
+```ruby
+git stash apply 
+```
+---
 
 ### Github
 - #### Conectar um repositório local a um remoto
 ```ruby
-git remote add nome URL
+git remote add nome-local URL
 ```
 ---
 - #### Envia as alterações do repositório local paro o remoto
@@ -207,15 +279,28 @@ git remote add nome URL
 git push -u origin main
 ```
 ---
-- #### Baixa as alterações do repositório remoto paro o local
+- #### Baixa e mescla as alterações do repositório remoto paro o local
 ```ruby
 git pull
 ```
 ---
+- #### Baixa mas não mescla as alterações do repositório remoto paro o local
+```ruby
+git fetch origin nome-da-branch
+```
+---
+
+## Links Úteis
+
+|Link| Descrição|
+|----|-----|
+[Como escrever no Github](https://docs.github.com/pt/get-started/writing-on-github)| Guia completo sobre como escrever e formatar conteúdo no GitHub
+[GitFluence](https://www.gitfluence.com)|Uma ferramenta online que sugere o comando Git ideal com base na ação que o usuário deseja realizar.
 
 
-## 📚 Documentação
+
+## Documentação
 - [Documentação Git](https://git-scm.com/doc)
 - [Documentação Github](https://docs.github.com/pt)
 
-## 🔍 Referências
+## Referências
