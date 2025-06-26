@@ -1,7 +1,24 @@
-# Guia Definitivo do Desenvolvimento Back-end
+# 🧭 Guia Definitivo de Desenvolvimento Back-end
 
-Repositório para armazenar Comandos utéis para o Git e Github.
+> Repositório de comandos, anotações e recursos úteis para desenvolvedores back-end.
 
+---
+
+## ✍️ Introdução
+
+Bem-vindo ao meu guia pessoal de desenvolvimento back-end!  
+
+Aqui você encontrará:
+
+- 📌 Comandos Git e GitHub comentados
+- 🐍 Scripts e comandos úteis em Python
+- 🔗 Links de referência e boas práticas
+- ⚙️ Ferramentas e recursos para produtividade
+- 📚 Anotações sobre conceitos importantes
+
+> Este repositório evolui com o tempo, acompanhando meu aprendizado e experiência como programador.
+
+---
 ## 🧾 Menu
 - [Lista de Comandos](#lista-de-comandos)
 - [Documentação](#documentação)
