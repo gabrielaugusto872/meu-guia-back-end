@@ -6,7 +6,7 @@ Repositório para armazenar Comandos utéis para o Git e Github.
 - [Lista de Comandos](#lista-de-comandos)
 - [Documentação](#documentação)
 - [Referências](#referências)
--[Links Úteis](#links-úteis)
+- [Links Úteis](#links-úteis)
 
 ## Lista de Comandos
 
@@ -296,8 +296,6 @@ git fetch origin nome-da-branch
 |----|-----|
 [Como escrever no Github](https://docs.github.com/pt/get-started/writing-on-github)| Guia completo sobre como escrever e formatar conteúdo no GitHub
 [GitFluence](https://www.gitfluence.com)|Uma ferramenta online que sugere o comando Git ideal com base na ação que o usuário deseja realizar.
-
-
 
 ## Documentação
 - [Documentação Git](https://git-scm.com/doc)
