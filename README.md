@@ -313,6 +313,8 @@ git fetch origin nome-da-branch
 |----|-----|
 [Como escrever no Github](https://docs.github.com/pt/get-started/writing-on-github)| Guia completo sobre como escrever e formatar conteúdo no GitHub.
 [GitFluence](https://www.gitfluence.com)|Uma ferramenta online que sugere o comando Git ideal com base na ação que o usuário deseja realizar.
+[Conventional Commits](https://github.com/conventional-commits/conventionalcommits.org)|Repositório sobre commits convencionais.
+[GitHub Etiquetas](https://docs.github.com/pt/issues/using-labels-and-milestones-to-track-work/managing-labels)|Página do GitHub que explica como gerenciar labels para organizar e acompanhar issues e pull requests
 
 ## Documentação
 - [Documentação Git](https://git-scm.com/doc)
