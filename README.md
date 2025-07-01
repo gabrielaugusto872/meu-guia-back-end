@@ -38,274 +38,79 @@ Aqui você encontrará:
 ---
 
 ### Comandos Gerais
-- #### Mostrar o status da árvore de trabalho
-```ruby
-git status
-```
----
-- #### Listar
-
-```
-ls
-```
+- `git status` (Mostrar o status da árvore de trabalho)
+- `ls` (Listar)
 ---
 
-### Criação e Navegação Entre Pastas e Arquivos
-- #### Criar pasta
-```ruby
-mkdir nome-da-pasta
-```
----
-- #### Excluir pasta
-```ruby
-rmdir nome-da-pasta
-```
----
-- #### Entrar na pasta
-```ruby
-cd nome-da-pasta/
-```
----
-- #### Criar arquivo
-```ruby
-touch nome-do-arquivo 
-```
----
-- #### Entrar no arquivo
-```ruby
-cd nome-do-arquivo
-```
----
-- #### Sair do arquivo ou pasta
-```ruby
-cd ..
-```
----
-- #### Cria um arquivo com contéudo ou sobreescreve um ja criado
-```ruby
-echo "Primeira linha do arquivo" > nome-arquivo.txt
-```
----
-- #### Adiciona contéudo no final de um arquivo já criado
-```ruby
-echo "Nova linha" >> nome-arquivo.txt
-```
+### CRIAÇÃO E NAVEGAÇÃO ENTRE PASTAS E ARQUIVOS
+- `mkdir nome-da-pasta` (Criar pasta)  
+- `rmdir nome-da-pasta` (Excluir pasta)  
+- `cd nome-da-pasta/` (Entrar na pasta)  
+- `touch nome-do-arquivo` (Criar arquivo)  
+- `cd nome-do-arquivo` (Entrar no arquivo)  
+- `cd ..` (Sair do arquivo ou pasta)  
+- `echo "Primeira linha do arquivo" > nome-arquivo.txt` (Cria um arquivo com conteúdo ou sobrescreve um já criado)  
+- `echo "Nova linha" >> nome-arquivo.txt` (Adiciona conteúdo no final de um arquivo já criado)
+
 ---
 
-### Cadastro 
-- #### Modificar o nome de usuário
-```ruby
-git config --global user.name "SeuNome" 
-```
----
-- #### Modificar o email cadastrado
-```ruby
-git config --global user.email SeuEmail
-```
----
-- #### Visualizar o nome cadastrado
-```ruby
-git config --global user.name
-```
----
-- #### Visualizar o email cadastrado
-```ruby
-git config --global user.email
-```
----
-- #### Salva suas senhas pra sempre/temporariamente
-```ruby
-git config --global credential.helper store/cache
-```
----
-- #### Lista as configurações globais
-```ruby
-git config --global --list
-```
----
- 
-### Configuração e Manipulação de Branchs
-- #### Visualizar o nome da Branch padrão
-```ruby
-git config init.defaultBranch
-```
----
-- #### Modificar o nome da Branch padrão
-```ruby
-git config --global init.defaultBranch nomeNovo
-```
----
-- #### Renomear o nome da branch atual
-```ruby
-git branch -m nome
-```
----
-- #### Criar e mudar para uma nova branch
-```ruby
-git switch -c nome-da-branch
-```
----
-- #### Apenas mudar para uma nova branch
-```ruby
-git switch nome-da-branch
-```
----
-- #### Lista o último commit de cada branch
-```ruby
-git branch -v
-```
----
-- ### Lista as branchs do repositório
-```ruby
-git branch
-```
----
-- #### Mescla um branch a branch atual
-```ruby
-git merge nome-da-branch-a-ser-mesclada
-```
----
-- #### Deleta a branch escolhida
-```ruby
-git branch -d nome-da-branch
-```
----
-- #### Clona apenas a branch escolhida
-```ruby
-git clone URL --branch nome-da-branch --single-branch
-```
----
-- #### Mostra as diferenças entre as branchs
-```ruby
-git diff nome-da-branch-1 nome-da-branch-2
-```
+### CADASTRO
+- `git config --global user.name "SeuNome"` (Modificar o nome de usuário)  
+- `git config --global user.email SeuEmail` (Modificar o email cadastrado)  
+- `git config --global user.name` (Visualizar o nome cadastrado)  
+- `git config --global user.email` (Visualizar o email cadastrado)  
+- `git config --global credential.helper store/cache` (Salva suas senhas pra sempre/temporariamente)  
+- `git config --global --list` (Lista as configurações globais)
+
 ---
 
-### Criação e Clonagem de Repositórios
-- #### Trasnformar pasta em diretório git
-```ruby
-git init
-```
----
-- #### Remove recursivamente o diretório git
-```ruby
-rm -rf .git
-```
----
-- #### Clonar o repositório
-```ruby
-git clone URL
-```
----
-- #### Clonar o repositório com um novo nome
-```ruby
-git clone URL novoNome
-```
----
-- #### Mostrar os repositórios remotos vinculados
-```ruby
-git remote -v
-```
+### CONFIGURAÇÃO E MANIPULAÇÃO DE BRANCHS
+- `git config init.defaultBranch` (Visualizar o nome da Branch padrão)  
+- `git config --global init.defaultBranch nomeNovo` (Modificar o nome da Branch padrão)  
+- `git branch -m nome` (Renomear o nome da branch atual)  
+- `git switch -c nome-da-branch` (Criar e mudar para uma nova branch)  
+- `git switch nome-da-branch` (Apenas mudar para uma nova branch)  
+- `git branch -v` (Lista o último commit de cada branch)  
+- `git branch` (Lista as branchs do repositório)  
+- `git merge nome-da-branch-a-ser-mesclada` (Mescla um branch à branch atual)  
+- `git branch -d nome-da-branch` (Deleta a branch escolhida)  
+- `git clone URL --branch nome-da-branch --single-branch` (Clona apenas a branch escolhida)  
+- `git diff nome-da-branch-1 nome-da-branch-2` (Mostra as diferenças entre as branchs)
+
 ---
 
-### Commits
-- #### Adiciona novos arquivos a serem salvos
-```ruby
-git add nome-do-arquivo
-```
----
-- #### Restaura o arquivo da forma que está no diretório
-```ruby
-git restore nome-do-arquivo
-```
----
-- #### Salvar alterações (Commit)
-```ruby
-git commit -m"Sua Mensagem"
-```
----
-- #### Exibe histórico de commits
-```ruby
-git log
-```
----
-- #### Exibe histórico de commits mais completo
-```ruby
-git reflog
-```
----
-- #### Alterar mensagem do último commit (Commit)
-```ruby
-git commit --amend -m"Sua Mensagem"
-```
----
-- #### Head volta para o commit apontado, as alteraçoes do commit apagado ficam prontas para serem commitadas denovo mas o código não é modificado
-```ruby
-git reset --soft codigoDoCommit
-```
----
-- #### Head volta para o commit apontado, as alteraçoes do commit apagado ficam somem mas o código não é modificado
-```ruby
-git reset --mixed codigoDoCommit
-```
----
-- #### Head volta para o commit apontado, as alteraçoes do commit apagado somem e o código é resetado
-```ruby
-git reset --hard codigoDoCommit
-```
----
-- #### Remover arquivos da árvore de trabalho
-```ruby
-git reset nome-do-arquivo 
-```
-ou
-```ruby
-git restore --staged nome-do-arquivo
+### CRIAÇÃO E CLONAGEM DE REPOSITÓRIOS
+- `git init` (Transformar pasta em diretório git)  
+- `rm -rf .git` (Remove recursivamente o diretório git)  
+- `git clone URL` (Clonar o repositório)  
+- `git clone URL novoNome` (Clonar o repositório com um novo nome)  
+- `git remote -v` (Mostrar os repositórios remotos vinculados)
 
-```
----
-- #### Arquiva as modificações
-```ruby
-git stash
-```
----
-- #### Lista as modificações arquivadas
-```ruby
-git stash list
-```
----
-- #### Recupera a modificação arquivada mais recente e remove ela da lista
-```ruby
-git stash pop 
-```
----
-- #### Recupera a modificação arquivada mais recente e mantém ela na lista
-```ruby
-git stash apply 
-```
 ---
 
-### Github
-- #### Conectar um repositório local a um remoto
-```ruby
-git remote add nome-local URL
-```
+### COMMITS
+- `git add nome-do-arquivo` (Adiciona novos arquivos a serem salvos)  
+- `git restore nome-do-arquivo` (Restaura o arquivo da forma que está no diretório)  
+- `git commit -m"Sua Mensagem"` (Salvar alterações – Commit)  
+- `git log` (Exibe histórico de commits)  
+- `git reflog` (Exibe histórico de commits mais completo)  
+- `git commit --amend -m"Sua Mensagem"` (Alterar mensagem do último commit)  
+- `git reset --soft codigoDoCommit` (Head volta para o commit e mantém alterações preparadas para commit)  
+- `git reset --mixed codigoDoCommit` (Head volta para o commit e descarta alterações preparadas)  
+- `git reset --hard codigoDoCommit` (Head volta para o commit e reseta o código)  
+- `git reset nome-do-arquivo` ou `git restore --staged nome-do-arquivo` (Remover arquivos da árvore de trabalho)  
+- `git stash` (Arquiva as modificações)  
+- `git stash list` (Lista as modificações arquivadas)  
+- `git stash pop` (Recupera a modificação arquivada mais recente e a remove da lista)  
+- `git stash apply` (Recupera a modificação arquivada mais recente e a mantém na lista)
+
 ---
-- #### Envia as alterações do repositório local paro o remoto
-```ruby
-git push -u origin main
-```
----
-- #### Baixa e mescla as alterações do repositório remoto paro o local
-```ruby
-git pull
-```
----
-- #### Baixa mas não mescla as alterações do repositório remoto paro o local
-```ruby
-git fetch origin nome-da-branch
-```
----
+
+### GITHUB
+- `git remote add nome-local URL` (Conectar um repositório local a um remoto)  
+- `git push -u origin main` (Envia as alterações do repositório local para o remoto)  
+- `git pull` (Baixa e mescla as alterações do repositório remoto para o local)  
+- `git fetch origin nome-da-branch` (Baixa mas não mescla as alterações do repositório remoto)
 
 ## Links Úteis
 
